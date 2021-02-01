@@ -29,12 +29,12 @@ int nbTentatives;
 
 // Nom :InitJoueur
 // Rôle : Crée un joueur. Initialise toutes les informations du joueur.
-//        Le nombre de tentatives, de parties gagnées et de parties jouées seront à 0.
-// Paramètres d'entrée :
-// Paramètres de sortie :
-// Paramètres d'entrée/sortie :
+// Le nombre de tentatives, de parties gagnées et de parties jouées seront à 0.
+// Paramètres d'entrée : nom
+// Paramètres de sortie :0
 
 void InitJoueur (TJoueur &joueurAcreer, string un_nom);
+
 
 
 // Nom :TirerNombreMystere
@@ -46,17 +46,17 @@ int TirerNombreMystere();
 // Nom :JouerPartie
 // Rôle : Fait jouer une partie au joueur passé en paramètre
 //        A la fin, met à jour les informations du joueur
-// Paramètres d'entrée:
-// Paramètres de sortie:
-// Paramètres d'entrée/sortie :
+// Paramètres d'entrée:un_nom,
+// Paramètres de sortie:joueuracreer,
+// Paramètres d'entrée/sortie  aucun
 
 void JouerPartie (TJoueur &un_joueur, int nombreADeviner);
 
 // Nom : MajResultatsJoueur
 // Rôle : met à jour les informations du joueur passé en paramètre
-// Paramètres d'entrée:
+// Paramètres d'entrée: nombreADeviner
 // Paramètres de sortie:
-// Paramètres d'entrée/sortie :
+// Paramètres d'entrée/sortie : un_joueur
 
 void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne);
 
