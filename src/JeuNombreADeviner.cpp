@@ -30,7 +30,7 @@ void InitJoueur(TJoueur& joueurAcreer, string un_nom)
 
 
 }
-
+joueur.
 
 // Nom :TirerNombreMystere
 // Rôle : Tire aléatoirement un nombre à deviner entre 0 et 10
@@ -52,9 +52,23 @@ int TirerNombreMystere()
 
 void JouerPartie(TJoueur& un_joueur, int nombreADeviner)
 {
-    //A COMPLETER
-}
+    int nombreADeviner = 0
+    cout << " Veuillez saisir une nombre a faire deviner "
+    cin >> nombreADeviner;
+    while (rep/=nombreADeviner)
+    {
 
+
+        if (rep<nombreADeviner)
+        {
+            cout << "Le nombre a deviner est plus grand"
+        }
+        else (rep>nombreADeviner)
+        {
+            cout << "Le nombre a deviner est plus petit"
+        }
+    }
+    cout << " Vous avez trouvé le nombre a deviner"
 
 // Nom : MajResultatsJoueur
 // Rôle : met à jour les informations du joueur passé en paramètre
@@ -64,7 +78,8 @@ void JouerPartie(TJoueur& un_joueur, int nombreADeviner)
 
 void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne)
 {
-   // A COMPLETER
+   joueur.nbTentatives = nbEssais
+   joueur.
 }
 
 // Nom : ResultatsJoueur
@@ -77,7 +92,9 @@ void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne)
 
 void ResultatsJoueur(TJoueur joueur, int& nbsucces, int& nbechec, int& nbessais)
 {
-    // A COMPLETER
+    joueur.nbSucces =
+    joueur.nbEchec =
+    joueur.nbEssais =
 }
 
 // Nom :Nom
